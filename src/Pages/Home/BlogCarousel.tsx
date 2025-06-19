@@ -60,7 +60,7 @@ const BlogCarousel: React.FC = () => {
   // Function to handle navigation with formatted title
   const handleNavigation = (title: string) => {
     const formattedTitle =   title.toLowerCase()
-  .replace(/[|/]/g, "")
+  .replace(/[|/:]/g, "")
   .replace(/\s+/g, "-")
   .replace(/-+$/, "");
   

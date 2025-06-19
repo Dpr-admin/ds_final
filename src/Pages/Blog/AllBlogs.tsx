@@ -30,7 +30,7 @@ interface UnifiedBlog {
 
 const formatStaticSlug = (text: string) =>
   text.toLowerCase()
-    .replace(/[|/]/g, "")
+    .replace(/[|/:]/g, "")
     .replace(/\s+/g, "-")
     .replace(/-+$/, "");
 

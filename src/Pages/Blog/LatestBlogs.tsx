@@ -56,7 +56,7 @@ const BlogItem: React.FC<{ post: BlogPost }> = ({ post }) => {
   const handleNavigation = (title: string) => {
     const formattedTitle = 
   title.toLowerCase()
-  .replace(/[|/]/g, "")
+  .replace(/[|/:]/g, "")
   .replace(/\s+/g, "-")
   .replace(/-+$/, "");
 

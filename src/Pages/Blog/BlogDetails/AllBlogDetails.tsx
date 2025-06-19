@@ -70,7 +70,7 @@ const BlogDetails: React.FC = () => {
     const staticBlog = blogData.find((b) => {
       const s = b.title
         .toLowerCase()
-        .replace(/[|/]/g, "")
+        .replace(/[|/:]/g, "")
         .replace(/\s+/g, "-")
         .replace(/-+$/, "");
       return s === formattedSlug;
@@ -175,6 +175,7 @@ const BlogDetails: React.FC = () => {
                     {blog.category}
                   </Typography>
                   <Typography
+                  variant="h1"
                     ref={titleRef}
                     data-text={blog.title}
                     sx={{

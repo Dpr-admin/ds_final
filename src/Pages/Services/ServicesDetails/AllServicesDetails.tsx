@@ -441,7 +441,7 @@ const ServicesDetails = () => {
                         alt="Top digital marketing agency offering SEO and PPC services"
                         style={{ width: "100%", borderRadius: "10px" }}
                       />
-                    </Grid>.........
+                    </Grid>
 
                     {/* Right Side - FAQ */}
                     <Grid item xs={12} lg={6}>
